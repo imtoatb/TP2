@@ -8,6 +8,7 @@
 html, body {
     height: 100%;
     background-image: url("../img/image_bg_feuilles.jpg");
+    background-attachment: fixed;               /* Fixe l'image d'arrière-plan */
 }
 
 
@@ -17,7 +18,7 @@ header {
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 8px;                         /* arrondit les coins */
     margin-bottom: 20px;
 }
 
@@ -27,10 +28,10 @@ header h1 {
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+    list-style: none;                           /* Enlève les puces de la liste */
+    display: flex; 
     justify-content: center;
-    gap: 20px;
+    gap:20px;
 }
 
 nav a {
@@ -46,7 +47,7 @@ nav a:hover {
 
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     background-color: #f0fdf4; 
     color: #193a2b;
     line-height: 1.6;
@@ -57,11 +58,11 @@ body {
 .home-image{
     background-color : #ffffff;
     padding : 10px;
-    border-left: 6px solid #088f44; /* petit accent vert */
-    border-right: 6px solid #088f44; /* petit accent vert */
+    border-left: 6px solid #088f44;             /* petit accent vert */
+    border-right: 6px solid #088f44;            /* petit accent vert */
     border-radius: 8px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);  /* ombre légère */
     display: block;
     width: 100%;
 }
@@ -76,8 +77,8 @@ main {
 section {
     background-color: #ffffff;
     padding: 20px;
-    border-left: 6px solid #088f44; /* petit accent vert */
-    border-right: 6px solid #088f44; /* petit accent vert */
+    border-left: 6px solid #088f44;
+    border-right: 6px solid #088f44; 
     border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -101,37 +102,48 @@ ul {
 
 .postit-list{
     display: flex;
-    flex-wrap : wrap;
-    gap : 30px;
-    justify-content : center;
+    flex-wrap : wrap;                               /* Permet de passer à la ligne si l'espace est insuffisant */
     list-style: none;
-    padding: 0;
+    justify-content : space-between;
+    margin: 0px;
     margin-bottom: 20px;
-    padding-left: 0px;
+    padding: 0px;
+    gap: 20px;
+
 }
 
 .postit{
-    background-color: #ffffff;
     width: 275px;
-    height: 320px;
+    height: 275px;
     padding: 15px;
     border: 3px solid #088f44;
     border-top: 6px solid #088f44;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    position: relative;
+    position: relative;                                     /* Position relative pour le positionnement absolu des détails */
+
     transition: transform 0.3s ease;
-    overflow: hidden;
-    cursor: pointer;
+    cursor: pointer;                                        /* Curseur en main pour indiquer que c'est cliquable */        
+    overflow: auto;                                         /* Permet de faire défiler le contenu si nécessaire (scrollbar) */
+}
+
+.postit:nth-child(odd) {
+    background-color: #e0f7e4;                             /* Couleur de fond différente pour les post-it impairs */
+}
+
+.postit:nth-child(even){
+    background-color: #f0fdf4;                             /* Couleur de fond différente pour les post-it pairs */
 }
 
 .postit:hover {
-    transform: scale(1.05);
+    transform: scale(1.05);                                 /* Agrandit au survol */
 }
 
 .postit .details {
+    position: absolute; 
     opacity: 0;
-    max-height: 0;
+    min-width: auto;
+    max-height: auto;
     overflow: hidden;
     transition: all 0.3s ease;
     padding-left: 15px;
