@@ -1,0 +1,62 @@
+Efficient coding practices to reduce energy consumption
+"Web performance optimisation is a holistic approach that encompasses multiple techniques aimed at accelerating load speed, reducing energy consumption and minimising the carbon footprint of a website."         
+                
+Lighten your website
+
+Compressing content elements (images, icons and videos) with tools such as (Adobe suite , Gimp, or Inkscape, the Affinity suite);
+Repairing broken links. 
+Reduce the number of HTTP requests. 
+
+
+Easier loading of content on your site.
+
+This is the very principle behind using caches. After all, why reload something that has already been loaded elsewhere?
+Caches limit multiple loading, and therefore lighten your site's requests/energy consumption.
+
+
+Exploiting the Content Delivery Network (CDN) 
+
+Allows your site's pages to load faster.
+Also helps anticipate site crashes in the event of an influx of visitors.
+
+
+Code optimisation
+
+Reduce the size of code, JavaScript, CSS and other files...
+Clean up excess plugins.
+
+
+Server optimisation
+
+Choose green hosting
+Optimise server settings
+implement modern server technologies such as HTTP/2 or HTTP/3, which enable more efficient data transfers.
+
+
+Optimising the algorithm
+    Choose algorithms with reduced complexity to minimise unnecessary operations.
+    Instead of using a linear search to find an element in an unsorted list, sort the list once and then use a binary search.
+
+Minimising CPU operations
+    Avoid unnecessary loops that consume CPU cycles.
+    Instead of using a loop to wait for an event, it's better to use an asynchronous wait function.
+
+Memory optimisation
+    Reduce memory usage by avoiding excessive dynamic allocations.
+    Use static arrays instead of dynamic lists to store fixed-size data.
+
+Processor power management
+    Use sleep mechanisms to reduce CPU power consumption when it is idle.
+    In a mobile application, configure timers to put the CPU to sleep when not in use.
+
+I/O optimisation
+    Reduce disk I/O by caching frequently used data in memory.
+    Cache frequently used database queries to avoid costly disk accesses.
+
+Use of caching
+    Minimise accesses to main memory by taking advantage of processor caches.
+    Use search algorithms that exploit the principle of locality to maximise cache utilisation.
+
+Minimising network requests
+    Reduce the number of network requests by grouping operations and minimising unnecessary data transfers.
+    Use batch requests to group multiple data read/write operations into a single request.

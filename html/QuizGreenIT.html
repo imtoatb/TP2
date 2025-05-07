@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green IT - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to GreenIT</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="QuizGreenIT.html">Quiz</a></li>
+                <li><a href="GreenITsiteWeb.html">Websites</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Green IT Quiz</h2>
+            <p>Test your knowledge about Green IT!</p>
+        </section>
+
+        <section class="form-info">
+            <form id="quiz-form" action="result.html" method="POST">
+                
+                    <h2>Your Informations</h2>
+                    <p>First Name</p>
+                    <input type="text" name="name" required><br>
+                    <p>Last Name</p>
+                    <input type="text" name="surname" required><br>
+                    <p>Birth Date</p>
+                    <input type="date" name="birthdate" required><br>
+                    <p>Email</p>
+                    <input type="email" name="email" required><br>
+                    <p>Phone</p>
+                    <input type="tel" name="phone" required><br>
+                    <p>Status</p>
+                    <select name="status" required class="status-button">
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                </section>
+
+                <section>
+                <div class="question">
+                    <label for="question1">1. What is the Green IT ?</label><br>
+                    <input type="radio" name="question1" value="a"> A) A system for recycling old computers.<br>
+                    <input type="radio" name="question1" value="b"> B) A method for increasing the energy consumption of servers.<br>
+                </div>
+
+                <br
+
+                <div class="question">
+                    <label for="question2">2. What is the main objective of Green IT ?</label><br>
+                    <input type="checkbox" name="question2" value="a"> A) Reduced energy consumption.<br>
+                    <input type="checkbox" name="question2" value="b"> B) Minimized electronic waste.<br>
+                    <input type="checkbox" name="question2" value="c"> C) Optimising the performance of electronic devices.<br>
+                </div>
+
+                <br>
+
+                <div class="question">
+                    <label for="question3">3. Give an example of Green IT paractice : </label><br>
+                    <input type="text" name="question3"> <br>
+                </div>
+
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://greenit.net/" class="footer-find-more"> Find out more ?</a>
+        <p>&copy; 2024 Maha Naceur. All rights reserved.</p>
+    </footer>
+</body>
+</html>
