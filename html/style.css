@@ -128,11 +128,11 @@ ul {
 }
 
 .postit:nth-child(odd) {
-    background-color: #e0f7e4;                             /* Couleur de fond différente pour les post-it impairs */
+    background-color: #eefcf0;                             /* Couleur de fond différente pour les post-it impairs */
 }
 
 .postit:nth-child(even){
-    background-color: #f0fdf4;                             /* Couleur de fond différente pour les post-it pairs */
+    background-color: #f3fbf5;                             /* Couleur de fond différente pour les post-it pairs */
 }
 
 .postit:hover {
@@ -140,6 +140,7 @@ ul {
 }
 
 .postit .details {
+    display: block;
     position: absolute; 
     opacity: 0;
     min-width: auto;
@@ -174,6 +175,15 @@ ul li {
     padding: 15px;
     border-radius: 8px;
 }
+
+.t-body:nth-child(odd) {
+    background-color: #eefcf0;
+}
+
+.t-body:nth-child(even){
+    background-color: #f3fbf5;
+}
+
 
 .gas-emissions{
     color: #555;
