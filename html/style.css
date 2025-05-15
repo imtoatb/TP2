@@ -57,31 +57,29 @@ body {
 
 .home-image{
     background-color : #ffffff;
-    padding : 10px;
+    padding: 10px;
     border-left: 6px solid #088f44;             /* petit accent vert */
     border-right: 6px solid #088f44;            /* petit accent vert */
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);  /* ombre légère */
     display: block;
-    width: 100%;
+    width: 80%;
 }
 
 
 /* MAIN */
-main {
-    max-width: 900px;
-    margin: auto;
-}
 
-section {
+
+section, main {
     background-color: #ffffff;
     padding: 20px;
     border-left: 6px solid #088f44;
     border-right: 6px solid #088f44; 
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 80%;
 }
 
 h2 {
@@ -112,7 +110,7 @@ ul {
 
 }
 
-.postit{
+.postit {
     width: 275px;
     height: 275px;
     padding: 15px;
@@ -151,7 +149,7 @@ ul {
     font-size: 0.9em;
 }
 
-.postit:hover .details {
+.postit:hover .details{
     opacity: 1;
     max-height: 300px;
 }
@@ -176,6 +174,14 @@ ul li {
     border-radius: 8px;
 }
 
+.t-body{
+    display: table-row;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px auto;
+    width: 70%;
+}
+
 .t-body:nth-child(odd) {
     background-color: #eefcf0;
 }
@@ -194,11 +200,21 @@ ul li {
     color: #088f44;
 }
 
-.tab, caption{
+.tab, .result, caption{
     border: 1px solid #ccc;
     border-radius: 8px;
     margin: 20px auto;
+    padding: 20px;
+    justify-items: center;
+    width: 80%;
+    max-width: 700px;
 
+}
+caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 thead{
@@ -207,6 +223,18 @@ thead{
     border-radius: 8px;
 }
 
+
+#information, #quiz{
+    color:#193a2b;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+#quiz {
+    display: none;
+}
 
 .form-info{
     padding: 20px;
@@ -237,6 +265,10 @@ thead{
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s ease;
+}
+.submit:hover {
+    transform: scale(1.05);  
+    transition: transform 0.3s ease;                            
 }
 
 /* FOOTER */

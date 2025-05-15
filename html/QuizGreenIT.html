@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green IT - Quiz</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
@@ -18,42 +19,51 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Green IT Quiz</h2>
-            <p>Test your knowledge about Green IT!</p>
-        </section>
+  
+    <section>
+        <h2>Green IT Quiz</h2>
+        <p>Test your knowledge about Green IT!</p>
+    </section>
 
-        <section class="form-info">
-            <form id="quiz-form" action="result.html" method="POST">
+    <section class="form-info">
+        <form method="POST" name="Quiz" action="#" class="box" id="quiz-form" onsubmit="return false">
+            <fieldset id="information">
+            
+                <h2>Your Informations</h2>
+                <p>First Name</p>
+                <input type="text" name="name" required><br>
                 
-                    <h2>Your Informations</h2>
-                    <p>First Name</p>
-                    <input type="text" name="name" required><br>
-                    <p>Last Name</p>
-                    <input type="text" name="surname" required><br>
-                    <p>Birth Date</p>
-                    <input type="date" name="birthdate" required><br>
-                    <p>Email</p>
-                    <input type="email" name="email" required><br>
-                    <p>Phone</p>
-                    <input type="tel" name="phone" required><br>
-                    <p>Status</p>
-                    <select name="status" required class="status-button">
-                        <option value="student">Student</option>
-                        <option value="professional">Professional</option>
-                        <option value="other">Other</option>
-                    </select><br>
-                </section>
+                <p>Last Name</p>
+                <input type="text" name="surname" required><br>
+                
+                <p>Birth Date</p>
+                <input type="date" name="birthdate" required><br>
+                
+                <p>Email</p>
+                <input type="email" name="email" required><br>
+                
+                <p>Phone</p>
+                <input type="tel" name="phone" required><br>
+                
+                <p>Status</p>
+                <select name="status" required class="status-button">
+                    <option value="student">Student</option>
+                    <option value="professional">Professional</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
+                <br>
+                <input type="button" value = "Start the quiz" class="submit" onclick="quizAlert()">
+            </fieldset>
 
-                <section>
+            <fieldset id="quiz">
                 <div class="question">
                     <label for="question1">1. What is the Green IT ?</label><br>
                     <input type="radio" name="question1" value="a"> A) A system for recycling old computers.<br>
                     <input type="radio" name="question1" value="b"> B) A method for increasing the energy consumption of servers.<br>
                 </div>
 
-                <br
+                <br>
 
                 <div class="question">
                     <label for="question2">2. What is the main objective of Green IT ?</label><br>
@@ -68,15 +78,47 @@
                     <label for="question3">3. Give an example of Green IT paractice : </label><br>
                     <input type="text" name="question3"> <br>
                 </div>
-
+                <br>
+                <br>
                 <button type="submit" class="submit">Submit</button>
-            </form>
-        </section>
+            </fieldset>
+
+            
+        </form>
+    </section>
+
+    <main>
+        <table id="result">
+            <caption>Quiz Results</caption>
+            <thead>
+                <tr>
+                    <th>Attempt</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="t-body">
+                    <td>1</td>
+                    <td>85%</td>
+                </tr>
+                <tr class="t-body">
+                    <td>2</td>
+                    <td>90%</td>
+                </tr>
+                <tr class="t-body">
+                    <td>3</td>
+                    <td>95%</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
+
+ 
 
     <footer>
         <a href="https://greenit.net/" class="footer-find-more"> Find out more ?</a>
         <p>&copy; 2024 Maha Naceur. All rights reserved.</p>
     </footer>
+    <script src="../JS/script.js"></script>
 </body>
 </html>
