@@ -1,0 +1,84 @@
+{
+  "intents": [
+    {
+      "tag": "greet",
+      "patterns": ["Hello", "Hi", "Cuckoo", "Good morning", "Good evening"],
+      "responses": ["Hello, how can I help you?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you soon", "See you next time"],
+      "responses": ["See you soon! Don't hesitate if you have any more questions."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thank you", "Thank you very much", "Thank you for your help", "Thanks a lot", "Thanks"],
+      "responses": ["You're welcome! It's a pleasure to help you."]
+    },
+    {
+      "tag": "greenit_definition",
+      "patterns": ["What is GreenIT?", "Definition of GreenIT", "What is GreenIT?", "What is Green IT", "What is green computing?", "Green IT"],
+      "responses": ["GreenIT, or green computing, aims to reduce the ecological footprint of information and communication technologies (ICT). This includes optimising energy consumption, managing electronic waste responsibly, and promoting sustainable IT practices."]
+    },
+    {
+      "tag": "greenit_practices",
+      "patterns": ["What are GreenIT practices?", "How to adopt GreenIT?", "Tips for greener computing"],
+      "responses": ["There are many practices for adopting GreenIT, such as using energy-efficient hardware, virtualising servers, putting equipment on standby, recycling electronic components, and making users aware of good practices."]
+    },
+    {
+      "tag": "energy_efficiency",
+      "patterns": ["How can I improve the energy efficiency of my infrastructure?", "Tips for reducing energy consumption"],
+      "responses": ["To improve energy efficiency, you can consider replacing energy-hungry equipment with more energy-efficient models, optimising ventilation and cooling, implementing energy-saving policies, and monitoring consumption using management tools."]
+    },
+    {
+      "tag": "renewable_energy",
+      "patterns": ["How can I integrate renewable energy into my IT infrastructure?", "Using renewable energy in IT"],
+      "responses": ["Integrating renewable energy into your IT infrastructure can mean installing solar panels or wind turbines to power your servers, or buying carbon credits to offset your carbon footprint."]
+    },
+    {
+      "tag": "carbon_footprint",
+      "patterns": ["How do I calculate my IT carbon footprint?", "Tools for measuring the carbon footprint of my infrastructure"],
+      "responses": ["There are various online tools for calculating your IT carbon footprint, taking into account energy consumption, emissions linked to the manufacture and transport of hardware, and the management of electronic waste."]
+    },
+    {
+      "tag": "additional_resources",
+      "patterns": ["Where can I find more information about GreenIT?", "Resources to learn more about GreenIT"],
+      "responses": ["You can consult specialist sites, blogs, research reports and online communities dedicated to GreenIT to find more information and advice."]
+    },
+    {
+      "tag": "server_virtualization",
+      "patterns": ["What is server virtualisation?", "Benefits of server virtualisation"],
+      "responses": ["Server virtualisation consists of running several virtual machines on a single physical server. This enables more efficient use of hardware resources, better workload management, reduced energy consumption and operational costs, as well as greater infrastructure flexibility and scalability."]
+    },
+    {
+      "tag": "ewaste_management",
+      "patterns": ["How to manage ewaste responsibly", "Recycling ewaste"],
+      "responses": ["To manage electronic waste responsibly, you can give priority to recycling and reusing equipment, use companies specialising in electronic recycling, and make your users aware of the need to reduce their consumption and recycle their end-of-life devices."]
+    },
+    {
+      "tag": "green_office_practices",
+      "patterns": ["How can I promote GreenIT practices within my company?", "GreenIT initiatives for companies"],
+      "responses": ["To promote GreenIT practices within your company, you can put in place responsible purchasing policies, raise awareness and train your employees in best practices, optimise the management of IT resources, and regularly assess the environmental impact of your activities."]
+    },
+    {
+      " tag": "data_center_efficiency",
+      "patterns": ["How can I improve the energy efficiency of my data centre?", "Data centre optimisation"],
+      "responses": ["To improve the energy efficiency of your data centre, you can consolidate servers to reduce the number of machines running, optimise cooling using techniques such as fresh air circulation, and adopt power management technologies to reduce equipment power consumption."]
+    },
+    {
+      "tag": "green_it_certifications",
+      "patterns": ["What GreenIT certifications are available?", "GreenIT training"],
+      "responses": ["There are several GreenIT certifications available, such as the Energy Star label, LEED (Leadership in Energy and Environmental Design) certification, and specific GreenIT training programmes offered by various organisations and institutions."]
+    },
+    {
+      "tag": "green_it_policy",
+      "patterns": ["How do I develop a GreenIT policy for my company?", "Environmental policy for information technology"],
+      "responses": ["To develop a GreenIT policy for your company, you can set targets for reducing the carbon footprint, encourage the purchase of energy-efficient equipment, implement energy-saving and waste-management measures, and involve all stakeholders in the process."]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": ["I'm sorry, I'm not sure I understand. Could you please rephrase your question?"]
+    }
+  ]
+}

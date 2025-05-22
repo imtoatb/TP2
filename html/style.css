@@ -85,6 +85,7 @@ section, main {
 h2 {
     color: #193a2b;
     margin-bottom: 10px;
+    justify-content: center;
 }
 
 h3 {
@@ -173,6 +174,61 @@ ul li {
     padding: 15px;
     border-radius: 8px;
 }
+
+section #chatbot {
+    width: 80%;
+    margin: 0 auto 15px auto;
+    display: block;
+    padding: 10px;
+    border: 1px solid #088f44;
+    border-radius: 8px;
+    font-size: 14px;
+    resize: vertical;
+    color: #193a2b;
+}
+
+#user-input {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    display: block;
+    padding: 10px;
+    border: 1px solid #088f44;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #193a2b;
+}
+
+#send-button {
+    background-color: #088f44;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+#send-button:hover {
+    background-color: #066c35;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease;
+}
+
+.user-message {
+    text-align: right;
+    color: #088f44;
+    margin-bottom: 8px;
+}
+
+.bot-message {
+    text-align: left;
+    color: #193a2b;
+    margin-bottom: 8px;
+}
+
 
 .t-body{
     display: table-row;
